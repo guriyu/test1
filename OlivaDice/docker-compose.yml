@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  oliva-dice:
+    build:
+      context: ./build
+      dockerfile: Dockerfile
+    container_name: oliva-dice
+    restart: always
+    volumes:
+      - ./conf:/app/conf
+      - ./plugin:/app/plugin
+      - ./data:/app/data
+      - ./lib:/app/lib
+      - ./logfile:/app/logfile

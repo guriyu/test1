@@ -1,0 +1,26 @@
+{
+    "account": [
+        {
+            // QQ号码
+            "id": 3076859337,
+            // 由于我们要去Go扫码登录，所以密码设置为空
+            "password": "",
+            "sdk_type": "onebot",
+            "platform_type": "qq",
+            // 模式写gocqhttp_show
+            "model_type": "gocqhttp_show",
+            // 此处服务器指Go-cqhttp开启的Post服务器
+            "server": {
+                "auto": false,
+                "type": "post",
+                // 若Go-cqhttp不在本地，请自行替换ip或域名
+                "host": "http://127.0.0.1",
+                // Go-cqhttp开启的Post服务器的端口
+                "port": 58000,
+                // Go-cqhttp处设置的token
+                "access_token": "tOKeN114514"
+            },
+            "debug": false
+        }
+    ]
+}
